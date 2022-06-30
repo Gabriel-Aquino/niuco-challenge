@@ -25,6 +25,7 @@ export default class UsersModel {
 
       return users;
     } catch (error) {
+      console.log(error)
       if (axios.isAxiosError(error)) {
         throw new AppError(`Unexpected error ${error.message}`, error.response!.status, error.code!, error.response!.data)
       }

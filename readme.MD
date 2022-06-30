@@ -8,7 +8,7 @@ and run:
 
 Afler that, to run the project, go to:
 
-> cd node
+> cd ..
 
 then run:
 

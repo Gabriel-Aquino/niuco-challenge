@@ -1,0 +1,16 @@
+version: '3.0'
+services:
+  json-server:
+    image: vimagick/json-server
+    command: -H 0.0.0.0 -p 80 -w /config/db.json
+    ports:
+      - "80:80"
+    volumes:
+      - ./config:/config
+    restart: always
+    expose:
+      - 80
+    networks:
+      - node_network
+networks:
+  node_network:
