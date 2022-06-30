@@ -19,7 +19,7 @@ app.use((err: Error, requestError: Request, response: Response, _: NextFunction)
     message: 'Internal server error',
   });
 });
-console.log(process.env.URL)
+
 app.listen(3000, () => {
   console.log('Server running at 3000')
 })
