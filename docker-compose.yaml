@@ -1,0 +1,21 @@
+version: '3.3'
+
+services:
+  app:
+    build:
+      context: node
+    container_name: app
+    volumes:
+      - ./node:/usr/src/app
+      - /usr/src/app/node_modules
+    networks:
+      - backend-challenge_node_network
+    tty: true
+    ports:
+      - 3000:3000
+    command: npm run dev
+    restart: always
+
+networks:
+  backend-challenge_node_network:
+    external: true
