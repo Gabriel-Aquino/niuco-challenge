@@ -1,6 +1,6 @@
 First of all, go to :
 
-> cd backend-challenge
+> cd backend
 
 and run:
 
